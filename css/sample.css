@@ -1,0 +1,119 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  height: 100%;
+  text-align: center;
+}
+.main-header {
+  padding-bottom: 15%;
+  height: 350px;
+  background-size: cover;
+  background-image: url("../images/header.jpg");
+  background-attachment: fixed;
+  position: relative;
+}
+/* ここから */
+header {
+  /*画面の最上部に配置すること
+    高さは50pxを指定すること
+    背景色は#2B2B2Bを指定すること*/
+  height: 50px;
+  background-color: #2B2B2B;
+  font-size: 1rem;
+}
+header ul {
+  color: white;
+  text-decoration: none;
+}
+header ul a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+header li {
+  list-style: none;
+}
+header li.left {
+  float: left;
+  text-align: left;
+}
+header li.right {
+  float: right;
+}
+header ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/* ここまでがheader部分の実装 */
+.main-header img {
+/*  Achieve 〜I will be an engineer〜”という画像を背景画像の上下左右中央に配置すること
+“Achieve 〜I will be an engineer〜”の幅は13%を指定すること*/
+  width:13%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+/* main画像（白い「Achieve」の文字の画像）部分の実装 */
+}
+.about {
+/* About Achieve部分の実装 */
+}
+.about h1{
+  /*“About Achieve”の文字サイズは1.5remを指定すること*/
+   font-size: 1.5rem;
+/* About Achieve部分の実装 */
+}
+.about p{
+  /*“About Achieve”の下にある文章の文字サイズは0.8remを指定すること*/
+   font-size: 0.8rem;
+/* About Achieve部分の実装 */
+}
+
+
+/* ここから */
+.function {
+  /*背景色は#D3D3D3を指定すること*/
+  background-color: #D3D3D3;
+  height: 400px;
+  width: 1500px;
+  overflow: hidden;
+  position: relative;
+}
+.function-images {
+  /*4つの画像は横並びで、画面の左右中央に表示させること
+  画像同士の間に任意のサイズで余白を入れること
+  下の画像のように、フッターとの間に無駄な余白が入っていないこと*/
+  height: 250px;
+  width: 800px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+.function-image {
+  float: left;
+  padding: 30px;
+}
+footer {
+    background-color: #283A4B;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
+/* footer部分の実装 */
+
+footer p{
+  font-size: 0.8rem;
+  color: white;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
