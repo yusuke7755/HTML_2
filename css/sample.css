@@ -101,15 +101,21 @@ header ul:after {
   float: left;
   padding: 30px;
 }
+/* 画面の最下部に配置されていること
+高さは70pxを指定すること
+背景色は#283A4Bを指定すること*/
 footer {
     background-color: #283A4B;
     width: 100%;
-    height: 100px;
+    height: 70px;
     position: absolute;
     bottom: 0;
 }
 /* footer部分の実装 */
-
+/*“運営会社DIVE INTO CODE株式会社”と
+コピーライトの文字サイズは0.8remを指定すること*/
+/* “運営会社DIVE INTO CODE株式会社”と
+コピーライトがフッターの上下左右中央に配置されていること */
 footer p{
   font-size: 0.8rem;
   color: white;
